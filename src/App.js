@@ -205,15 +205,20 @@ class App extends React.PureComponent {
                 !formData["day-birth"] ||
                 !formData["month-birth"] ||
                 !formData["year-birth"]
-              )
-                window.location.hash = "#third-step";
-
-              setTimeout(() => {
-                alert(
-                  JSON.stringify({ ...this.state.formData, ...values }, null, 2)
-                );
-                setSubmitting(false);
-              }, 400);
+              ) {
+                window.location.hash = "#first-step";
+              } else {
+                setTimeout(() => {
+                  alert(
+                    JSON.stringify(
+                      { ...this.state.formData, ...values },
+                      null,
+                      2
+                    )
+                  );
+                }, 400);
+              }
+              setSubmitting(false);
             }}
           >
             {({ isSubmitting }) => (
