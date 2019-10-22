@@ -4,8 +4,8 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import "./App.scss";
 
 /*
- * with more time I would have managed the conditions of the forms in the best way and maybe
- * I would have managed everything even with a single form
+ * this test was done in a very short time, so I am not very satisfied with the result.
+ * With more time I would have managed the conditions of the forms in the best way and I would have done better tests.
  */
 class App extends React.PureComponent {
   state = {
@@ -87,7 +87,7 @@ class App extends React.PureComponent {
                     component="div"
                   />
                   <button type="submit" disabled={isSubmitting}>
-                    Next
+                    Next >
                   </button>
                 </div>
               </Form>

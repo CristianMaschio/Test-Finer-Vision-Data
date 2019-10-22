@@ -27,6 +27,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: inherit;
         .form-field {
           display: flex;
           flex-direction: column;
@@ -49,9 +50,15 @@
           flex-direction: row;
           justify-content: flex-end;
           margin: 0.5rem;
+          margin-top: auto;
           button {
             border-radius: 6px;
             margin-left: 1rem;
+            background-image: linear-gradient(#1a237e, #6200ea);
+            color: white;
+            width: 5rem;
+            text-align: center;
+            height: 1.5rem;
           }
         }
         input {
