@@ -207,6 +207,7 @@ class App extends React.PureComponent {
                 !formData["year-birth"]
               ) {
                 window.location.hash = "#first-step";
+                alert("Some data has not been entered.");
               } else {
                 setTimeout(() => {
                   alert(
