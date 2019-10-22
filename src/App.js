@@ -3,16 +3,22 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import "./App.scss";
 
+/*
+ * with more time I would have managed the conditions of the forms in the best way and maybe
+ * I would have managed everything even with a single form
+ */
 class App extends React.PureComponent {
   state = {
     openStep: 0,
     formData: {}
   };
 
+  // ------------Life Cycle-------------
   componentDidMount() {
-    window.location.hash = "#second-step";
+    window.location.hash = "#first-step";
   }
 
+  // ------------Render Functions-------------
   renderFirstStep = () => {
     return (
       <div className="step-container">
@@ -234,6 +240,7 @@ class App extends React.PureComponent {
     );
   };
 
+  // ------------Render-------------
   render() {
     return (
       <div className="app">
